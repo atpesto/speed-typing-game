@@ -106,25 +106,6 @@ class Game extends Component {
     this.clearInputValue();
   }
 
-  createTimer = (timerDurationInSeconds) => {
-    const { score, timer } = this.state;
-
-    if (timer) {
-      console.log(timer);
-      clearTimeout(timer);
-    }
-
-    const newTimer = setTimeout(() => {
-      const message = 'Game Over';
-      const description = `You scored ${score}.`;
-      simpleNotification(message, description);
-    }, timerDurationInSeconds * 1000);
-
-    this.setState({
-      timer: newTimer,
-    });
-  }
-
   render() {
     const {
       word,

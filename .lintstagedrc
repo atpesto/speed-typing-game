@@ -1,8 +1,8 @@
 {
-    "linters": {
-      "src/**/*.js": [
-        "eslint",
-        "git add"
-      ]
-    }
+  "linters": {
+    "src/**/*.js": [
+      "eslint",
+      "git add"
+    ]
+  }
 }
