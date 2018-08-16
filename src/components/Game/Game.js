@@ -102,6 +102,10 @@ class Game extends Component {
       const message = 'Game Over';
       const description = `You scored ${score}.`;
       simpleNotification(message, description);
+      this.setState({
+        score: 0,
+        verificationStatus: false,
+      });
     }
     this.clearInputValue();
   }
